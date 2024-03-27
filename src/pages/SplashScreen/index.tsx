@@ -28,6 +28,5 @@ const styles = StyleSheet.create({
   text: {
     fontSize: 32,
     fontFamily: 'Poppins-Medium',
-    color: 'black',
   },
 });
