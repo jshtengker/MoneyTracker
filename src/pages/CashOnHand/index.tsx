@@ -32,7 +32,6 @@ const CashOnHand = ({navigation}) => {
         <Gap height={24} />
         <Button
           label="Save"
-          onSubmit={() => navigation.navigate('SignIn')}
         />
         <Gap height={54} />
       </View>
