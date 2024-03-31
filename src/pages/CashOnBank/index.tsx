@@ -66,31 +66,4 @@ const styles = StyleSheet.create({
     flex: 1,
     paddingHorizontal: 24,
   },
-  profilePicture: {
-    height: 110,
-    width: 110,
-    borderColor: '#8D92A3',
-    borderWidth: 1,
-    borderStyle: 'dashed',
-    borderRadius: 110 / 2,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  profilePictureContainer: {
-    alignItems: 'center',
-  },
-  addPhotoContainer: {
-    height: 90,
-    width: 90,
-    backgroundColor: '#F0F0F0',
-    borderRadius: 90 / 2,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  addPhoto: {
-    fontFamily: 'Poppins-Light',
-    fontSize: 14,
-    width: 40,
-    textAlign: 'center',
-  },
 });
