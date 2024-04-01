@@ -7,11 +7,30 @@ import {
   View,
   Text,
 } from 'react-native';
-import {Button, Gap, PageHeader, TextInput} from '../../components';
+import {Button, Gap, PageHeader, TextInput, TransactionList} from '../../components';
 
 
 
 const CashOnHand = ({navigation}) => {
+
+  const Transactions = [
+    {
+      date: '17 April 2020',
+      description: 'Water, Food',
+      amount: '-Rp. 300.000',
+    },
+    {
+      date: '18 April 2020',
+      description: 'Office supplies',
+      amount: '-Rp. 300.000',
+    },
+    {
+      date: '19 April 2020',
+      description: 'Top Up',
+      amount: '+Rp. 300.000',
+    },
+  ];
+
   return (
     <ScrollView style={styles.container}>
       <PageHeader
@@ -41,8 +60,17 @@ const CashOnHand = ({navigation}) => {
         <Text style={styles.textStyle}>
             Last 3 Transactions
         </Text>
-        <Gap height={24} />
-
+      <ScrollView>
+          {Transactions.map((transaction, index) => (
+            <TransactionList
+              key={index}
+              date={transaction.date}
+              description={transaction.description}
+              amount={transaction.amount}
+            />
+          ))}
+           <Gap height={40} />
+        </ScrollView>
       </View>
     </ScrollView>
   );
